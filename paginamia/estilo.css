@@ -69,10 +69,19 @@ padding:8px 15px;
 border-radius:8px;
 cursor:pointer;
 }
-
-.producto{
-position:relative;
+/*esto no va pero lo intentamos*/
+.producto-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:15px;
 }
+.precio{
+color:#0077aa;
+font-weight:bold;
+font-size:20px;
+}
+/**/
 
 .carrusel{
 width:100%;
@@ -158,6 +167,7 @@ margin-left:20px;
 }
 
 }
+
 
 
 
