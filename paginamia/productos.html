@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Hardware</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <div class="nav">   
+        <a href="index.html">1</a>
+        <a href="productos.html">2</a>
+    </div>
+
+    <div class="card">
+        <h1>Productos</h1>
+        <div class="producto">
+            <div class="carrusel">
+                <img src="productos/producto1.jpg" class="slide active">
+                <img src="productos/producto2.jpg" class="slide">
+                <img src="productos/prodcuto3.jpg" class="slide">
+            </div>
+
+            <div class="info">
+                <h3>Samsung A05</h3>
+                    <p><b>Uso:</b> Usado/nuevo</p>
+                    <p><b>tipo:</b> Celular gama entrada/media</p>
+                    <p><b>Detalles:</b> tiene buena camara de 50MP, su bateria es de 5000 mAh con una carga de 25W, tiene una pantalla de 6.7 pulgadas </p>
+                    <p><b>Equipado con:</b> 4GB de RAM y 128 GB de espacio</p>
+            </div>
+
+            <div class="precio">
+                $150.000
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slides = document.querySelectorAll(".slide")
+        let index = 0
+        function cambiarImagen(){
+        slides[index].classList.remove("active")
+        index++
+        if(index >= slides.length){
+        index = 0
+        }
+        slides[index].classList.add("active")
+        }
+        setInterval(cambiarImagen,3000)
+    </script>
+
+</body>
+</html>

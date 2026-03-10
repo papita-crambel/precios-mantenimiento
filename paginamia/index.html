@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicio Técnico PC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">1</a>
+        <a href="productos.html">2</a>
+    </div>
+
+    <img  src="imagenes/yo2.jpeg" class="perfil">
+    <div class="presentacion">
+        <h2>Hola, soy Lucas</h2>
+        <p>
+            Soy egresado de la escuela técnica ESETP Nº760.
+            Actualmente me dedico a la limpieza, optimización y mantenimiento de computadoras, además de la venta de equipos electrónicos. Gracias a la formación técnica adquirida, mi objetivo es ofrecer un servicio confiable, transparente y de calidad.
+        </p>
+    </div>
+
+<div class="card">
+    <h1>Precio de Los Servicios</h1>
+
+    <div class="service">
+        <div class="service-header">
+            <h3>Limpieza básica</h3>
+            <span class="price">$10.000</span>
+        </div>
+        <button onclick="toggleInfo(1)">Más información</button>
+        <div id="info1" class="more-info">
+            Limpieza interna con aire comprimido, eliminación de polvo y revisión general del equipo.
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="service-header">
+            <h3>Limpieza profunda</h3>
+            <span class="price">$18.000</span>
+        </div>
+        <button onclick="toggleInfo(2)">Más información</button>
+        <div id="info2" class="more-info">
+            Desarme completo del equipo, limpieza detallada de ventiladores, placa madre y componentes internos.
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="service-header">
+            <h3>Cambio de pasta térmica</h3>
+            <span class="price">$12.000</span>
+        </div>
+        <button onclick="toggleInfo(3)">Más información</button>
+        <div id="info3" class="more-info">
+            Reemplazo de pasta térmica del procesador para mejorar temperatura y rendimiento.
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="service-header">
+            <h3>Instalación de Office y activacion</h3>
+            <span class="price">$10.000</span>
+        </div>
+        <button onclick="toggleInfo(4)">Más información</button>
+        <div id="info4" class="more-info">
+            Instalación y activacion de paquete de oficina listo para usar.
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="service-header">
+            <h3>activacion de Windows o office</h3>
+            <span class="price">$7.000</span>
+        </div>
+        <button onclick="toggleInfo(5)">Más información</button>
+        <div id="info5" class="more-info">
+           Activacion del cliente Windows o office para poder usarlos libremente.
+        </div>
+    </div>
+
+    
+    <div class="service">
+        <div class="service-header">
+            <h3>activacion de Windows y office</h3>
+            <span class="price">$9.500</span>
+        </div>
+        <button onclick="toggleInfo(6)">Más información</button>
+        <div id="info6" class="more-info">
+           Activacion de ambos clientes windows y office para uso de trabajo.
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="service-header">
+            <h3>Instalación y configuración de Windows</h3>
+            <span class="price">$20.000</span>
+        </div>
+        <button onclick="toggleInfo(7)">Más información</button>
+        <div id="info7" class="more-info">
+            Instalación del sistema operativo, drivers actualizados y optimización inicial del equipo.
+        </div>
+    </div>
+
+</div>
+
+<script>
+function toggleInfo(id){
+
+let info = document.getElementById("info"+id)
+
+if(info.style.display === "block"){
+info.style.display = "none"
+}else{
+info.style.display = "block"
+}
+
+}
+</script>
+
+</body>
+</html>
